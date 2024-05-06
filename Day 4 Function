@@ -1,0 +1,12 @@
+//Function//
+public class Function{
+        public void area(int r){
+                 System.out.println("Area=>"+3.14*r*r;
+            }
+}
+class FunctionTest{
+         public static void main(String [],args){
+          Function f=new Function();
+          f.area(10);
+}
+}
