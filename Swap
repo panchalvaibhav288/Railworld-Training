@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class swap{
+        public static void main(String [] args){
+            Scanner sc=new Scanner(System.in);
+            int a,b;
+            System.out.println("Enter any two no.");
+            a=sc.nextInt();
+            b=sc.nextInt();
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            System.out.println("Swap=>");
+            System.out.println("A=>"+a+"B=>"+b);
+        }
+    }
+}
