@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class seconlarge {
+               public static void main(String [] args){
+                   Scanner sc=new Scanner(System.in);
+                   int a[]=new int[50];
+                   int i,j,n,temp;
+                   System.out.println("Enter total no of Elements");
+                   n=sc.nextInt();
+                   System.out.println("Enter Elements");
+                   for(i=1;i<=n;i++){
+                       a[i]=sc.nextInt();
+                   }
+                   for(i=1;i<=n;i++){
+                    temp=a[i];
+                    j=i-1;
+                    while(temp<a[j]&&j>=0){
+                        a[j+1]=a[j];
+                        j--;
+                    }
+                    a[j+1]=temp;
+                   }
+                   for(i=1;i<=n;i++){
+                   System.out.println("Sort=>"+a[i]);
+                   }
+                   System.out.println("Second Largest Element=>"+a[n-1]);
+                           
+               }    
+}
